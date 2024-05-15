@@ -1,0 +1,15 @@
+{
+# 微信公众号配置
+"app_id": "wxa211678359dece09", # 公众号appId
+"app_secret": "450d4173be6fa4cea0fa344b6361b80c", # 公众号appSecret
+"template_id": "bpqda7GuO2RqVzOwoSHZP2KGL5ltPa52w5fUdcMPwvc", # 模板消息id
+"user": ["o3b0I6d3N8StuaYXsn8htWB6vuk0"],  # 接收消息的微信号，多个微信用英文逗号间隔，例如["wx1", "wx2"]
+
+# 信息配置
+"province": "山西", # 所在省份
+"city": "长治市", # 所在城市
+"city_code": "140400", # 新吴区
+"weather_key": "855a44e77bd64033552fb7079d0ce390",
+"birthday1": {"name": "宝宝", "birthday": "r2000-09-09"},  # 生日1，姓名和生日，生日若为农历在最前面加上r即可
+"love_date": "2024-05-13"  # 在一起的日期，暂不支持农历
+}
