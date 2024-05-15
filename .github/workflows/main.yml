@@ -1,0 +1,28 @@
+name: Run Test Script
+
+on:
+  schedule:
+    - cron: '21 20 * * *'  # UTC 时间，对应北京时间为晚上8点21分
+
+jobs:
+  run-script:
+    name: Run Test Script
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'  # 根据你的程序需求选择 Python 版本
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Test Script
+        run: |
+          python main.py
